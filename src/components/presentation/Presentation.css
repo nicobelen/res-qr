@@ -1,0 +1,48 @@
+.presentation {
+  background-image: linear-gradient(#24b13b, rgb(7, 43, 10));
+  height: 100vh;
+}
+
+.svgBackground {
+  background-image: url("../../assets/imgs/Element.svg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.gridWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  grid-gap: 50px;
+}
+
+.logo {
+  width: 100%;
+  margin: 0 50px;
+}
+
+.presentationWrapper {
+  margin: 0 50px;
+}
+
+.presentationTitle {
+  color: white;
+  text-shadow: 2px 2px black;
+  font-size: 80px;
+}
+
+.presentationParagraph {
+  color: white;
+  font-size: 25px;
+}
+
+.buttonsDiv {
+  width: 100%;
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+}
