@@ -1,7 +1,7 @@
 import "./Presentation.css";
 import qrimg from "../../assets/imgs/LogoPngBlancoConSombra.png";
 import { ArrowRightOutlined } from "@ant-design/icons";
-import { LoginForm } from "../LoginForm/LoginForm";
+import { LoginForm } from "../loginform/LoginForm";
 import { useState } from "react";
 
 export const Presentation = () => {
@@ -41,9 +41,7 @@ export const Presentation = () => {
           </div>
         </div>
       </div>
-      <div className="login-div">
-        <LoginForm isShowLogin={isShowLogin} />
-      </div>
+      <LoginForm isShowLogin={isShowLogin} />
     </div>
   );
 };
