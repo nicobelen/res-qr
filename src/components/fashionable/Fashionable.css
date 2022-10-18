@@ -1,0 +1,38 @@
+.fashionable {
+    background-color: white;
+    height: 100vh;
+}
+
+.fashionableContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+}
+
+.fashionableTitle {
+    color: black;
+    font-size: 4.5vmax;
+    padding-left: 40px;
+}
+
+.logo {
+    width: 100%;
+}
+
+.fashionableSubtitle {
+    color: black;
+    font-size: 1.2vmax;
+    padding: 0px 40px;
+}
+
+.buttonDiv {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttonPage {
+    padding-left: 40px;
+    padding-top: 20px;
+}
