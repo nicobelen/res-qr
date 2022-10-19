@@ -1,38 +1,64 @@
 .fashionable {
-    background-color: white;
-    height: 100vh;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .fashionableContent {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
 }
 
 .fashionableTitle {
-    color: black;
-    font-size: 4.5vmax;
-    padding-left: 40px;
+  color: black;
+  font-size: 3.5vmax;
+  padding-left: 40px;
 }
 
 .logo {
-    width: 100%;
+  width: 100%;
 }
 
 .fashionableSubtitle {
-    color: black;
-    font-size: 1.2vmax;
-    padding: 0px 40px;
+  color: black;
+  font-size: 1vmax;
+  padding: 0px 40px;
 }
 
 .buttonDiv {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .buttonPage {
-    padding-left: 40px;
-    padding-top: 20px;
+  padding-left: 40px;
+  padding-top: 20px;
+}
+
+.group-div {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  z-index: 3;
+}
+
+.group1 {
+  position: absolute;
+  right: 0;
+  display: flex;
+  float: right;
+  opacity: 0.4;
+  z-index: -999;
+}
+
+.scanelem2 {
+  position: absolute;
+  padding-top: 4%;
+  z-index: -999;
 }
