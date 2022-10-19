@@ -1,27 +1,34 @@
 import "./Fashionable.css";
 import img from "../../assets/imgs/HandQr.png";
-
+import { ArrowRightOutlined } from "@ant-design/icons";
+import group1 from "../../assets/imgs/Group1.svg";
+import scanelem from "../../assets/imgs/scan-elem.svg";
 
 export const Fashionable = () => {
-    return (
-        <div>
-            <div className="fashionable">
-                <div className="fashionableContent">
-                    <div className="img">
-                        <img src={img} className="logo" alt="img" />
-                    </div>
-                    <div className="texts">
-                        <h1 className="fashionableTitle">Make it look fashionable</h1>
-                        <p className="fashionableSubtitle">
-                        If you are going to have it in your wallet everyday, might as well make it fancy.
-                        You can choose from an array of options whichever suits your style better.
-                        </p>
-                        <div className="buttonPage">
-                            <button>Try it now</button>
-                        </div>
-                    </div>
-                </div>
+  return (
+    <div className="group-div">
+      <div className="fashionable">
+        <div className="fashionableContent">
+          <div className="img">
+            <img src={img} className="logo" alt="img" />
+          </div>
+          <div className="texts">
+            <img src={scanelem} className="scanelem2" alt="scanelem" />
+            <h1 className="fashionableTitle">Make it look fashionable</h1>
+            <p className="fashionableSubtitle">
+              If you are going to have it in your wallet everyday, might as well
+              make it fancy. You can choose from an array of options whichever
+              suits your style better.
+            </p>
+            <div className="buttonPage">
+              <button>
+                Try it now &nbsp; <ArrowRightOutlined />{" "}
+              </button>
             </div>
+          </div>
         </div>
-    );
-  };
+      </div>
+      <img src={group1} className="group1" alt="Group1" />
+    </div>
+  );
+};

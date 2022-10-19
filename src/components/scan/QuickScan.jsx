@@ -3,12 +3,14 @@ import { ArrowRightOutlined } from "@ant-design/icons";
 import "./QuickScan.css";
 import scanimg from "../../assets/imgs/image-removebg-preview1.png";
 import group from "../../assets/imgs/Group.svg";
+import scanelem from "../../assets/imgs/scan-elem.svg";
 
 export const QuickScan = () => {
   return (
     <div className="group-div">
       <div className="quick-scan">
         <div className="text-div">
+          <img src={scanelem} className="scanelem" alt="scanelem" />
           <h1>Acces all the data with a quick scan</h1>
           <p>
             All the medical information will be available just by scanning the

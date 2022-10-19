@@ -45,6 +45,7 @@ button:active {
 
 h1 {
   font-size: 3.5vmax;
+  z-index: 10;
 }
 
 p {
@@ -61,5 +62,11 @@ p {
   position: absolute;
   opacity: 0.4;
   padding-top: 120px;
+  z-index: -999;
+}
+
+.scanelem {
+  position: absolute;
+  padding-top: 7%;
   z-index: -999;
 }
