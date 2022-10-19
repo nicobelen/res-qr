@@ -1,4 +1,5 @@
 import React from "react";
+import { AboutUs } from "../../components/aboutus/AboutUs";
 import { Fashionable } from "../../components/fashionable/Fashionable";
 import { Footer } from "../../components/footer/Footer";
 import { Presentation } from "../../components/presentation/Presentation";
@@ -10,6 +11,7 @@ export const Home = () => {
       <Presentation />
       <QuickScan />
       <Fashionable />
+      <AboutUs />
       <Footer />
     </div>
   );
