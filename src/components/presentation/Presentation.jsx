@@ -1,22 +1,12 @@
 import "./Presentation.css";
 import qrimg from "../../assets/imgs/LogoPngBlancoConSombra.png";
 import { ArrowRightOutlined } from "@ant-design/icons";
-import { LoginForm } from "../loginform/LoginForm";
-import { useState } from "react";
+import { Link } from "react";
 
 export const Presentation = () => {
-  const [isShowLogin, setIsShowlogin] = useState(false);
-
-  const handleLoginClick = () => {
-    setIsShowlogin((isShowLogin) => !isShowLogin);
-  };
-
   return (
     <div>
-      <div
-        className="presentation"
-        style={{ filter: `blur(${isShowLogin ? 10 : 0}px)` }}
-      >
+      <div className="presentation">
         <div className="svgBackground">
           <div className="gridWrapper">
             <img src={qrimg} className="logo" alt="qrimg" />
@@ -35,13 +25,14 @@ export const Presentation = () => {
             <button className="buttonOne">
               Scan QR &nbsp; <ArrowRightOutlined />{" "}
             </button>
-            <button onClick={handleLoginClick} className="buttonTwo">
-              Sign In / Sign Up &nbsp; <ArrowRightOutlined />{" "}
-            </button>
+            <a href="http://127.0.0.1:5500/public/login.html" rel="noreferrer">
+              <button className="buttonTwo">
+                Sign In / Sign Up &nbsp; <ArrowRightOutlined />{" "}
+              </button>
+            </a>
           </div>
         </div>
       </div>
-      <LoginForm isShowLogin={isShowLogin} />
     </div>
   );
 };
