@@ -28,7 +28,7 @@ button:active {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 30px;
+  padding: 20px;
   width: 100vw;
   height: 100vh;
   font-family: "Inter", sans-serif;
@@ -41,6 +41,7 @@ button:active {
   margin: 0px;
   padding: 0px;
   z-index: 3;
+  padding-top: 0%;
 }
 
 h1 {
