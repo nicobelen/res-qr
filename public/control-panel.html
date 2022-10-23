@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="../src/components/control-panel/ControlPanel.css"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Control-Panel</title>
+  </head>
+  <body>
+    <div class="svgBackground">
+      <div class="side-bar" id="sticky-sidebar">
+        <a href="http://localhost:3002/"
+          ><img src="/src/assets/imgs/LogoPngBlancoConSombra.png" class="logo"
+        /></a>
+        <ul class="list-group">
+          <li onclick="" class="list-item">Perfil</li>
+          <li class="list-item">Seguridad</li>
+          <li class="list-item">Ayuda</li>
+          <li class="list-item">Contacto</li>
+          <li class="list-item">Nosotros</li>
+        </ul>
+      </div>
+
+      <div class="wrapper">
+        <div class="formulario">
+            <div class="edit-profile">
+          <h1 class="editProfile">EDITAR PERFIL</h1>
+        </div>
+          <br />
+          <div class="PersonalInfo">
+            <div class="datos-personales">
+              <span id="sectionTitle">Datos personales</span>
+            </div>
+            <input
+              class="name-input"
+              id="name-input"
+              type="text"
+              name="texto"
+              placeholder="NOMBRE COMPLETO"
+            />
+            <div class="documentNacionality">
+              <input
+                id="document"
+                type="text"
+                name="texto"
+                placeholder="DOCUMENTO"
+              />
+              <div class="nacionality">
+                <p>
+                  Nacionalidad
+                  <select name="pais" class="deploy-countries">
+                    <option value="AR">Argentina</option>
+                    <option value="BO">Bolivia</option>
+                    <option value="BR">Brasil</option>
+                    <option value="CL">Chile</option>
+                    <option value="CO">Colombia</option>
+                    <option value="CR">Costa Rica</option>
+                    <option value="CU">Cuba</option>
+                    <option value="DM">Dominica</option>
+                    <option value="EC">Ecuador</option>
+                    <option value="SV">El Salvador</option>
+                    <option value="ES">España</option>
+                    <option value="US">Estados Unidos</option>
+                    <option value="GT">Guatemala</option>
+                    <option value="GY">Guayana</option>
+                    <option value="GF">Guayana Francesa</option>
+                    <option value="HN">Honduras</option>
+                    <option value="MX">México</option>
+                    <option value="NI">Nicaragua</option>
+                    <option value="PA">Panamá</option>
+                    <option value="PY">Paraguay</option>
+                    <option value="PE">Perú</option>
+                    <option value="PR">Puerto Rico</option>
+                    <option value="DO">República Dominicana</option>
+                    <option value="UY" selected>Uruguay</option>
+                    <option value="VE">Venezuela</option>
+                  </select>
+                </p>
+              </div>
+              <div class="date">
+                <input type="date" name="FECHA DE NACIMIENTO" id="BirthDate" />
+              </div>
+            </div>
+
+            <div class="documentNacionality">
+              <div class="pregnant">
+                <p>
+                  ¿Actualmente embarazada?
+                  <select name="menu" value="select">
+                    <option value="None">---</option>
+                    <option value="si">SI</option>
+                    <option value="no">NO</option>
+                  </select>
+                </p>
+                <div class="sangre">
+                  <p>
+                    TIPO DE SANGRE
+                    <select name="menu" value="select">
+                      <option value="None">---</option>
+                      <option value="a-rh+">A Rh+</option>
+                      <option value="a-rh-">A Rh-</option>
+                      <option value="b-rh+">B Rh+</option>
+                      <option value="b-rh-">B Rh-</option>
+                      <option value="ab-rh">AB Rh+</option>
+                      <option value="ab-rh-">AB Rh-</option>
+                      <option value="o-rh+">O Rh+</option>
+                      <option value="o-rh-">O Rh-</option>
+                    </select>
+                  </p>
+                  <span id="menu"> </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pregnant">
+            <div class="diabetes">
+              <p>
+                DIABETES
+                <select name="menu" value="select">
+                  <option value="None">---</option>
+                  <option value="si">SI</option>
+                  <option value="no">NO</option>
+                </select>
+                <select name="menu" value="select">
+                  <option value="None">TIPO</option>
+                  <option value="si">TIPO 1</option>
+                  <option value="no">TIPO 2</option>
+                  <option value="si">NO APLICA</option>
+                </select>
+              </p>
+            </div>
+            <div class="diabetes">
+              <p>
+                INSULINODEPENDIENTE
+                <select name="menu" value="select">
+                  <option value="None">---</option>
+                  <option value="si">SI</option>
+                  <option value="no">NO</option>
+                </select>
+              </p>
+            </div>
+          </div>
+
+          <div class="antecedentesMedicos">
+            <div class="antecedentes-titulo">
+              <span id="sectionTitle"
+                >Antecedentes medicos de **GRAVEDAD**</span
+              >
+            </div>
+            <div class="patologias">
+              <div>
+                <h3>PATOLOGIAS NEURONALES DE RIESGO:</h3>
+              </div>
+              <div>
+                <p class="comentario">*marque si posee alguna*</p>
+              </div>
+            </div>
+            <div class="list-group">
+              <label class="list-group-item">
+                <div class="list-group-item2">
+                  <div class="tumores-text">
+                    <input
+                      class="form-check-input me-1"
+                      type="checkbox"
+                      value=""
+                    />
+                    Alzheimer
+                  </div>
+
+                  <div class="tumores-input">
+                    <input
+                      id="name-input"
+                      type="text"
+                      name="texto"
+                      placeholder="EVENTO DE GRAVEDAD (fecha 'dd/mm/aa', acontecimiento)"
+                    />
+                  </div>
+                </div>
+              </label>
+              <label class="list-group-item">
+                <div class="list-group-item2">
+                  <div class="tumores-text">
+                    <input
+                      class="form-check-input me-1"
+                      type="checkbox"
+                      value=""
+                    />
+                    Epilepsia
+                  </div>
+
+                  <div class="tumores-input">
+                    <input
+                      id="name-input"
+                      type="text"
+                      name="texto"
+                      placeholder="EVENTO DE GRAVEDAD (fecha 'dd/mm/aa', acontecimiento)"
+                    />
+                  </div>
+                </div>
+              </label>
+              <label class="list-group-item">
+                <div class="list-group-item2">
+                  <div class="tumores-text">
+                    <input
+                      class="form-check-input me-1"
+                      type="checkbox"
+                      value=""
+                    />
+                    Neuropatías
+                  </div>
+
+                  <div class="tumores-input">
+                    <input
+                      id="name-input"
+                      type="text"
+                      name="texto"
+                      placeholder="EVENTO DE GRAVEDAD (fecha 'dd/mm/aa', acontecimiento)"
+                    />
+                  </div>
+                </div>
+              </label>
+              <label class="list-group-item">
+                <div class="list-group-item2">
+                  <div class="tumores-text">
+                    <input
+                      class="form-check-input me-1"
+                      type="checkbox"
+                      value=""
+                    />
+                    Traumatismos craneoencefálicos
+                  </div>
+
+                  <div class="tumores-input">
+                    <input
+                      id="name-input"
+                      type="text"
+                      name="texto"
+                      placeholder="EVENTO DE GRAVEDAD (fecha 'dd/mm/aa', acontecimiento)"
+                    />
+                  </div>
+                </div>
+              </label>
+              <label class="list-group-item">
+                <div class="list-group-item2">
+                  <div class="tumores-text">
+                    <input
+                      class="form-check-input me-1"
+                      type="checkbox"
+                      value=""
+                    />
+                    Tumores cerebrales o metástasis
+                  </div>
+
+                  <div class="tumores-input">
+                    <input
+                      id="name-input"
+                      type="text"
+                      name="texto"
+                      placeholder="EVENTO DE GRAVEDAD (fecha 'dd/mm/aa', acontecimiento)"
+                    />
+                  </div>
+                </div>
+              </label>
+            </div>
+            <br />
+            <br />
+            <div class="patologias">
+              <div>
+                <h3>PATOLOGIAS/OPERACIONES CARDIACAS DE RIESGO:</h3>
+              </div>
+              <div>
+                <p class="comentario">*marque si posee alguna*</p>
+              </div>
+            </div>
+            <div class="listas">
+              <div class="list-group">
+                <label class="list-group-item">
+                  <div class="list-group-item2">
+                    <div class="tumores-text">
+                      <input
+                        class="form-check-input me-1"
+                        type="checkbox"
+                        value=""
+                      />
+                      Infección del corazón
+                    </div>
+
+                    <div class="tumores-input">
+                      <input
+                        id="name-input"
+                        type="text"
+                        name="texto"
+                        placeholder="EVENTO DE GRAVEDAD (fecha 'dd/mm/aa', acontecimiento)"
+                      />
+                    </div>
+                  </div>
+                </label>
+                <label class="list-group-item">
+                  <div class="list-group-item2">
+                    <div class="tumores-text">
+                      <input
+                        class="form-check-input me-1"
+                        type="checkbox"
+                        value=""
+                      />
+                      Enfermedad del músculo cardíaco
+                    </div>
+
+                    <div class="tumores-input">
+                      <input
+                        id="name-input"
+                        type="text"
+                        name="texto"
+                        placeholder="EVENTO DE GRAVEDAD (fecha 'dd/mm/aa', acontecimiento)"
+                      />
+                    </div>
+                  </div>
+                </label>
+                <label class="list-group-item">
+                  <div class="list-group-item2">
+                    <div class="tumores-text">
+                      <input
+                        class="form-check-input me-1"
+                        type="checkbox"
+                        value=""
+                      />
+                      Enfermedad de las válvulas cardíacas
+                    </div>
+
+                    <div class="tumores-input">
+                      <input
+                        id="name-input"
+                        type="text"
+                        name="texto"
+                        placeholder="EVENTO DE GRAVEDAD (fecha 'dd/mm/aa', acontecimiento)"
+                      />
+                    </div>
+                  </div>
+                </label>
+                <label class="list-group-item">
+                  <div class="list-group-item2">
+                    <div class="tumores-text">
+                      <input
+                        class="form-check-input me-1"
+                        type="checkbox"
+                        value=""
+                      />
+                      Operación al corazón
+                    </div>
+
+                    <div class="tumores-input">
+                      <input
+                        id="name-input"
+                        type="text"
+                        name="texto"
+                        placeholder="EVENTO DE GRAVEDAD (fecha 'dd/mm/aa', acontecimiento)"
+                      />
+                    </div>
+                  </div>
+                </label>
+                <label class="list-group-item">
+                  <div class="list-group-item2">
+                    <div class="tumores-text">
+                      <input
+                        class="form-check-input me-1"
+                        type="checkbox"
+                        value=""
+                      />
+                      Paro cardíaco
+                    </div>
+
+                    <div class="tumores-input">
+                      <input
+                        id="name-input"
+                        type="text"
+                        name="texto"
+                        placeholder="EVENTO DE GRAVEDAD (fecha 'dd/mm/aa', acontecimiento)"
+                      />
+                    </div>
+                  </div>
+                </label>
+                <label class="list-group-item">
+                  <div class="list-group-item2">
+                    <div class="tumores-text">
+                      <input
+                        class="form-check-input me-1"
+                        type="checkbox"
+                        value=""
+                      />
+                      Bypass
+                    </div>
+
+                    <div class="tumores-input">
+                      <input
+                        id="name-input"
+                        type="text"
+                        name="texto"
+                        placeholder="EVENTO DE GRAVEDAD (fecha 'dd/mm/aa', acontecimiento)"
+                      />
+                    </div>
+                  </div>
+                </label>
+              </div>
+            </div>
+            <br />
+            <br />
+            <div class="patologias">
+              <div>
+                <h3>PATOLOGIAS/OPERACIONES RESPIRATORIAS DE RIESGO:</h3>
+              </div>
+              <div>
+                <p class="comentario">*marque si posee alguna*</p>
+              </div>
+            </div>
+            <div class="listas">
+              <div class="list-group">
+                <label class="list-group-item">
+                  <div class="list-group-item2">
+                    <div class="tumores-text">
+                      <input
+                        class="form-check-input me-1"
+                        type="checkbox"
+                        value=""
+                      />
+                      Asma
+                    </div>
+
+                    <div class="tumores-input">
+                      <input
+                        id="name-input"
+                        type="text"
+                        name="texto"
+                        placeholder="EVENTO DE GRAVEDAD (fecha 'dd/mm/aa', acontecimiento)"
+                      />
+                    </div>
+                  </div>
+                </label>
+                <label class="list-group-item">
+                  <div class="list-group-item2">
+                    <div class="tumores-text">
+                      <input
+                        class="form-check-input me-1"
+                        type="checkbox"
+                        value=""
+                      />
+                      Neumonia
+                    </div>
+
+                    <div class="tumores-input">
+                      <input
+                        id="name-input"
+                        type="text"
+                        name="texto"
+                        placeholder="EVENTO DE GRAVEDAD (fecha 'dd/mm/aa', acontecimiento)"
+                      />
+                    </div>
+                  </div>
+                </label>
+                <label class="list-group-item">
+                  <div class="list-group-item2">
+                    <div class="tumores-text">
+                      <input
+                        class="form-check-input me-1"
+                        type="checkbox"
+                        value=""
+                      />
+                      Cáncer pulmonar
+                    </div>
+
+                    <div class="tumores-input">
+                      <input
+                        id="name-input"
+                        type="text"
+                        name="texto"
+                        placeholder="EVENTO DE GRAVEDAD (fecha 'dd/mm/aa', acontecimiento)"
+                      />
+                    </div>
+                  </div>
+                </label>
+                <label class="list-group-item">
+                  <div class="list-group-item2">
+                    <div class="tumores-text">
+                      <input
+                        class="form-check-input me-1"
+                        type="checkbox"
+                        value=""
+                      />
+                      EPOC
+                    </div>
+
+                    <div class="tumores-input">
+                      <input
+                        id="name-input"
+                        type="text"
+                        name="texto"
+                        placeholder="EVENTO DE GRAVEDAD (fecha 'dd/mm/aa', acontecimiento)"
+                      />
+                    </div>
+                  </div>
+                </label>
+                <label class="list-group-item">
+                  <div class="list-group-item2">
+                    <div class="tumores-text">
+                      <input
+                        class="form-check-input me-1"
+                        type="checkbox"
+                        value=""
+                      />
+                      Bronquitis
+                    </div>
+
+                    <div class="tumores-input">
+                      <input
+                        id="name-input"
+                        type="text"
+                        name="texto"
+                        placeholder="EVENTO DE GRAVEDAD (fecha 'dd/mm/aa', acontecimiento)"
+                      />
+                    </div>
+                  </div>
+                </label>
+                <label class="list-group-item">
+                  <div class="list-group-item2">
+                    <div class="tumores-text">
+                      <input
+                        class="form-check-input me-1"
+                        type="checkbox"
+                        value=""
+                      />
+                      Oxigeno complementario
+                    </div>
+
+                    <div class="tumores-input">
+                      <input
+                        id="name-input"
+                        type="text"
+                        name="texto"
+                        placeholder="EVENTO DE GRAVEDAD (fecha 'dd/mm/aa', acontecimiento)"
+                      />
+                    </div>
+                  </div>
+                </label>
+              </div>
+            </div>
+
+            <div class="patologias">
+              <div>
+                <h3>ALERGIAS</h3>
+              </div>
+              <div>
+                <p class="comentario">*marque si posee alguna*</p>
+              </div>
+            </div>
+            <div class="listas">
+              <div class="list-group">
+                <label class="list-group-item">
+                  <div class="list-group-item2">
+                    <div class="tumores-text">
+                      <input
+                        class="form-check-input me-1"
+                        type="checkbox"
+                        value=""
+                      />
+                      Contactantes
+                    </div>
+
+                    <div class="tumores-input">
+                      <input
+                        id="name-input"
+                        type="text"
+                        name="texto"
+                        placeholder="ALERGIAS DE GRAVEDAD (fecha 'dd/mm/aa', acontecimiento)"
+                      />
+                    </div>
+                  </div>
+                </label>
+                <label class="list-group-item">
+                  <div class="list-group-item2">
+                    <div class="tumores-text">
+                      <input
+                        class="form-check-input me-1"
+                        type="checkbox"
+                        value=""
+                      />
+                      Inhalantes
+                    </div>
+
+                    <div class="tumores-input">
+                      <input
+                        id="name-input"
+                        type="text"
+                        name="texto"
+                        placeholder="ALERGIAS DE GRAVEDAD (fecha 'dd/mm/aa', acontecimiento)"
+                      />
+                    </div>
+                  </div>
+                </label>
+                <label class="list-group-item">
+                  <div class="list-group-item2">
+                    <div class="tumores-text">
+                      <input
+                        class="form-check-input me-1"
+                        type="checkbox"
+                        value=""
+                      />
+                      Ingestantes
+                    </div>
+
+                    <div class="tumores-input">
+                      <input
+                        id="name-input"
+                        type="text"
+                        name="texto"
+                        placeholder="ALERGIAS DE GRAVEDAD (fecha 'dd/mm/aa', acontecimiento)"
+                      />
+                    </div>
+                  </div>
+                </label>
+                <label class="list-group-item">
+                  <div class="list-group-item2">
+                    <div class="tumores-text">
+                      <input
+                        class="form-check-input me-1"
+                        type="checkbox"
+                        value=""
+                      />
+                      Cutaneas
+                    </div>
+
+                    <div class="tumores-input">
+                      <input
+                        id="name-input"
+                        type="text"
+                        name="texto"
+                        placeholder="ALERGIAS DE GRAVEDAD (fecha 'dd/mm/aa', acontecimiento)"
+                      />
+                    </div>
+                  </div>
+                </label>
+                <label class="list-group-item">
+                  <div class="list-group-item2">
+                    <div class="tumores-text">
+                      <input
+                        class="form-check-input me-1"
+                        type="checkbox"
+                        value=""
+                      />
+                      Vasculitis por hipersensibilidad
+                    </div>
+
+                    <div class="tumores-input">
+                      <input
+                        id="name-input"
+                        type="text"
+                        name="texto"
+                        placeholder="ALERGIAS DE GRAVEDAD (fecha 'dd/mm/aa', acontecimiento)"
+                      />
+                    </div>
+                  </div>
+                </label>
+                <label class="list-group-item">
+                  <div class="list-group-item2">
+                    <div class="tumores-text">
+                      <input
+                        class="form-check-input me-1"
+                        type="checkbox"
+                        value=""
+                      />
+                      Anafilaxia
+                    </div>
+
+                    <div class="tumores-input">
+                      <input
+                        id="name-input"
+                        type="text"
+                        name="texto"
+                        placeholder="ALERGIAS DE GRAVEDAD (fecha 'dd/mm/aa', acontecimiento)"
+                      />
+                    </div>
+                  </div>
+                </label>
+                <label class="list-group-item">
+                  <div class="list-group-item2">
+                    <div class="tumores-text">
+                      <input
+                        class="form-check-input me-1"
+                        type="checkbox"
+                        value=""
+                      />
+                      Sinusitis
+                    </div>
+
+                    <div class="tumores-input">
+                      <input
+                        id="name-input"
+                        type="text"
+                        name="texto"
+                        placeholder="ALERGIAS DE GRAVEDAD (fecha 'dd/mm/aa', acontecimiento)"
+                      />
+                    </div>
+                  </div>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="buttonsDiv">
+            <button
+              id="button-guardar"
+              role="link"
+              onclick="window.location='http://es.stackoverflow.com'"
+            >
+              GUARDAR
+            </button>
+          </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
