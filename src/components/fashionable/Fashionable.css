@@ -1,64 +1,127 @@
-.fashionable {
-  height: 100vh;
+/* Page Backround */
+
+.fashionable-backround {
   width: 100vw;
+  height: 80vh;
   display: flex;
-  justify-content: center;
+}
+
+
+/* Blocks */
+
+.fashionable {
+  display: flex;
   align-items: center;
 }
 
-.fashionableContent {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
+.svgBackround {
+  position: absolute;
+  right: 0;
+  display: flex;
+  float: right;
 }
 
-.fashionableTitle {
+/* Elements */
+
+.fashionable__logo {
+  width: 100%;
+  display: flex;
+}
+
+.fashionable__content {
+  margin-right: 10%;
+}
+
+.svgBackround__element {
+  opacity: 0.4;
+  z-index: -999;
+}
+
+
+/* Modifiers */
+
+.fashionable__logo--img {
+  width: 80%;
+}
+
+.fashionable__content--svgGreen {
+  position: absolute;
+  padding-top: 4%;
+  z-index: -999;
+  width: 100%;
+}
+
+.fashionable__content--title {
   color: black;
   font-size: 3.5vmax;
   padding-left: 40px;
 }
 
-.logo {
-  width: 100%;
-}
-
-.fashionableSubtitle {
+.fashionable__content--subtitle {
   color: black;
   font-size: 1vmax;
   padding: 0px 40px;
 }
 
-.buttonDiv {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.buttonPage {
+.fashionable__content--button {
   padding-left: 40px;
   padding-top: 20px;
 }
 
-.group-div {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  margin: 0px;
-  padding: 0px;
-  z-index: 3;
+
+/* Others */
+
+.logo {
+  width: 100%;
 }
 
-.group1 {
-  position: absolute;
-  right: 0;
-  display: flex;
-  float: right;
-  opacity: 0.4;
-  z-index: -999;
-}
 
-.scanelem2 {
-  position: absolute;
-  padding-top: 4%;
-  z-index: -999;
+/* Page responsive */
+
+@media screen and (max-width: 960px) {
+  .fashionable-backround {
+    
+  }
+
+  .fashionable > * {
+    display: flex;
+    width: 100%;
+  }
+
+  .fashionable__logo {
+    width: 200%;
+    order: 1;
+    display: flex;
+  }
+
+  .fashionable__logo--img {
+    transform: scaleX(-1);
+    width: 100%;
+    margin: 0%;
+  }
+
+  .fashionable__content {
+    display: block;
+    padding-left: 5%;
+  }
+
+  .fashionable__content--button {
+    display: flex;
+  }
+
+  .fashionable__content--title {
+    font-size: 40px;
+  }
+
+  .fashionable__content--subtitle {
+    font-size: 20px;
+  }
+
+  .fashionable__content--svgGreen {
+    width: 70vw;
+  }
+
+  .svgBackround {
+    margin-top: 30%;
+  }
 }
