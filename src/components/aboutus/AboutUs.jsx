@@ -4,7 +4,6 @@ import dani from "../../assets/imgs/Dani.png";
 import eze from "../../assets/imgs/Eze.png";
 import nico from "../../assets/imgs/Nico.png";
 import mauri from "../../assets/imgs/Mauri.png";
-import daniFondo from "../../assets/imgs/Dani Fondo.png"
 
 export const AboutUs = () => {
     return (
