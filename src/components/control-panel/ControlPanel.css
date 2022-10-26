@@ -82,9 +82,9 @@ h1 {
   padding-top: 8vh;
   font-style: italic;
   background: -webkit-linear-gradient(90deg, #24b13b, rgb(0, 0, 0));
+  background-clip: content-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  /* text-shadow: 3px 3px #00000056; */
   text-decoration: wavy;
 }
 
@@ -278,4 +278,33 @@ option {
 .form-group label {
   font-weight: 500;
   font-size: 1.5vmax;
+}
+
+.qr {
+  max-width: 10vw;
+}
+
+.qrs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.choose-color {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.select-color-title {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.qrs input[type="radio"] {
+  transform: scale(2);
 }

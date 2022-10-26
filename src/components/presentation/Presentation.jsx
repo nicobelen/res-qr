@@ -25,7 +25,7 @@ export const Presentation = () => {
             <button className="buttonOne">
               Scan QR &nbsp; <ArrowRightOutlined />{" "}
             </button>
-            <a href="http://127.0.0.1:5500/public/login.html" rel="noreferrer">
+            <a href="http://localhost:8000/login" rel="noreferrer">
               <button className="buttonTwo">
                 Sign In / Sign Up &nbsp; <ArrowRightOutlined />{" "}
               </button>

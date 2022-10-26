@@ -35,8 +35,8 @@
   <body>
     <div class="svgBackground">
       <div class="side-bar" id="sticky-sidebar">
-        <a href="http://localhost:8000/"
-          ><img src="static/LogoPngBlancoConSombra.png" class="logo"
+        <a href="http://localhost:3002/"
+          ><img src="/src/assets/imgs/LogoPngBlancoConSombra.png" class="logo"
         /></a>
         <ul class="list-group">
           <li onclick="" class="list-item">Perfil</li>
@@ -705,6 +705,27 @@
         <div class="form-group">
           <label for="exampleFormControlTextarea1">OTROS DATOS QUE CONSIDERE DE IMPORTANCIA</label>
           <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="SINDROME / CONDICIONES/ CAPACIDADES DIFERENTES"></textarea>
+        </div>
+
+        <div class="select-color-title">
+          <h3>SELECCIONE SU COLOR DE PREFERENCIA</h3>
+        </div>
+        <div class="choose-color">
+          <div class="qrs">
+            <label for="qrBlue"><img src="/src/assets/imgs/blue.png" alt="Blue Qr" class="qr"></label>
+            <br>
+            <input type="radio" name="qrSelector" id="qrBlue">
+          </div>
+          <div class="qrs">
+            <label for="qrOrange"><img src="/src/assets/imgs/orange.png" alt="Orange Qr" class="qr"></label>
+            <br>
+            <input type="radio" name="qrSelector" id="qrOrange">
+          </div>
+          <div class="qrs">
+            <label for="qrGreen"><img src="/src/assets/imgs/green.png" alt="Green Qr" class="qr"></label>
+            <br>
+            <input type="radio" name="qrSelector" id="qrGreen">
+          </div>
         </div>
 
           <div class="buttonsDiv">
