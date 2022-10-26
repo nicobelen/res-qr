@@ -1,6 +1,7 @@
 .presentation {
   background-image: linear-gradient(#24b13b, rgb(7, 43, 10));
   height: 100vh;
+  width: 100;
 }
 
 .svgBackground {
@@ -20,9 +21,13 @@
   grid-gap: 50px;
 }
 
-.logo {
+.logo-qr {
+  width: 600px;
+}
+
+.gridWrapper img {
   width: 100%;
-  margin: 0 50px;
+  padding-left: 5%;
 }
 
 .presentationWrapper {
@@ -32,7 +37,7 @@
 .presentationTitle {
   color: white;
   text-shadow: 2px 2px black;
-  font-size: 80px;
+  font-size: 65px;
 }
 
 .presentationParagraph {
@@ -90,10 +95,28 @@ button:active {
   background-color: black;
 }
 
-.login-div {
-  /* height: 100vh;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center; */
+@media screen and (max-width: 960px) {
+  .presentationWrapper > h1 {
+    font-size: 50px;
+    text-align: center;
+    margin: 0%;
+  }
+
+  .presentationWrapper > p {
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 10%;
+  }
+
+  .gridWrapper {
+    display: block;
+    align-items: center;
+  }
+
+  .logo-qr {
+    height: 50%;
+    width: 60%;
+    padding-left: 15%;
+  }
+
 }

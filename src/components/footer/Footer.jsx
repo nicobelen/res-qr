@@ -8,31 +8,31 @@ export const Footer = () => {
       <div className="footer-div">
         <div className="links-div">
           <img src={elem} className="Elem" alt="Elem" />
-          <h3>Services</h3>
+          <h3>Githubs</h3>
           <div className="listing-div">
-            <a href="asd">Email Marketing</a>
-            <a href="asd">Campaing</a>
-            <a href="asd">Branding</a>
-            <a href="asd">Offline</a>
+            <a href="https://github.com/cabreraezequiel">Ezequiel Cabrera</a>
+            <a href="https://github.com/Martinliporace">Martin Liporace</a>
+            <a href="https://github.com/Vinill">Daniel Muller</a>
+            <a href="https://github.com/nicobelen">Nicolas Belen</a>
+            <a href="https://github.com/Dak4rPrO">Mauricio Miranda</a>
           </div>
         </div>
         <div className="links-div">
           <img src={elem} className="Elem" alt="Elem" />
-          <h3>About</h3>
+          <h3>ResQR</h3>
           <div className="listing-div">
-            <a href="asd">Our story</a>
-            <a href="asd">Benefits</a>
-            <a href="asd">Team</a>
-            <a href="asd">Carreers</a>
+            <a href="https://github.com/orgs/ResQR/repositories">Github</a>
+            <a href="asd">Instagram</a>
+            <a href="asd">Twitter</a>
           </div>
         </div>
         <div className="links-div">
           <img src={elem} className="Elem" alt="Elem" />
-          <h3>Legal</h3>
+          <h3>Technologies</h3>
           <div className="listing-div">
-            <a href="asd">Terms & Conditions</a>
-            <a href="asd">Privacy Policy</a>
-            <a href="asd">Terms of use</a>
+            <a href="https://es.reactjs.org">React</a>
+            <a href="https://getbootstrap.com">Bootstrap</a>
+            <a href="https://animaticss.com/articulo/que-es-bem-css/">BEM methodology</a>
           </div>
         </div>
         <div className="newsletter-div">

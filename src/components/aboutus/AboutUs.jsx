@@ -9,10 +9,11 @@ export const AboutUs = () => {
     return (
         <div className="aboutUs">
             <h1 className="title">Meet the team behind it</h1>
-            <div className="content">
-                <a href=""><img src={eze} className="logo" alt="img-dani" /></a>
-                <img src={martin} className="logo" alt="martin" />
-                <img src={dani} className="logo" alt="img-peque" />
+            <div className="content" data-aos="fade-up"
+            data-aos-duration="3000">
+                <a href=""><img src={eze} className="logo" alt="img-eze" /></a>
+                <img src={martin} className="logo" alt="img-martin" />
+                <img src={dani} className="logo" alt="img-dani" />
                 <img src={nico} className="logo" alt="img-nico" />
                 <img src={mauri} className="logo" alt="img-mauri" />
             </div>

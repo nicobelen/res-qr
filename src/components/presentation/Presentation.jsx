@@ -1,7 +1,7 @@
 import "./Presentation.css";
 import qrimg from "../../assets/imgs/LogoPngBlancoConSombra.png";
 import { ArrowRightOutlined } from "@ant-design/icons";
-import { LoginForm } from "../loginform/LoginForm";
+import { LoginForm } from "../LoginForm/LoginForm";
 import { useState } from "react";
 
 export const Presentation = () => {
@@ -12,14 +12,14 @@ export const Presentation = () => {
   };
 
   return (
-    <div>
+    <div className="rady">
       <div
         className="presentation"
         style={{ filter: `blur(${isShowLogin ? 10 : 0}px)` }}
       >
         <div className="svgBackground">
           <div className="gridWrapper">
-            <img src={qrimg} className="logo" alt="qrimg" />
+            <img src={qrimg} className="logo-qr" alt="qrimg" />
             <div className="presentationWrapper">
               <h1 className="presentationTitle">
                 The QR code that could save your life
