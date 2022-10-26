@@ -1,17 +1,12 @@
 import "./Presentation.css";
 import qrimg from "../../assets/imgs/LogoPngBlancoConSombra.png";
 import { ArrowRightOutlined } from "@ant-design/icons";
-import { LoginForm } from "../LoginForm/LoginForm";
-import { useState } from "react";
+import { Link } from "react";
 
 export const Presentation = () => {
-  const [isShowLogin, setIsShowlogin] = useState(false);
-
-  const handleLoginClick = () => {
-    setIsShowlogin((isShowLogin) => !isShowLogin);
-  };
-
   return (
+    <div>
+      <div className="presentation">
     <div className="rady">
       <div
         className="presentation"
@@ -35,13 +30,14 @@ export const Presentation = () => {
             <button className="buttonOne">
               Scan QR &nbsp; <ArrowRightOutlined />{" "}
             </button>
-            <button onClick={handleLoginClick} className="buttonTwo">
-              Sign In / Sign Up &nbsp; <ArrowRightOutlined />{" "}
-            </button>
+            <a href="http://localhost:8000/login" rel="noreferrer">
+              <button className="buttonTwo">
+                Sign In / Sign Up &nbsp; <ArrowRightOutlined />{" "}
+              </button>
+            </a>
           </div>
         </div>
       </div>
-      <LoginForm isShowLogin={isShowLogin} />
     </div>
   );
 };

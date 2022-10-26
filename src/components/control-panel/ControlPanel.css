@@ -1,0 +1,310 @@
+body {
+  font-family: "Inter", sans-serif;
+  height: 100vh;
+}
+
+.svgBackground {
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  color: rgb(0, 0, 0);
+  font-family: "Inter", sans-serif;
+}
+
+.side-bar {
+  background: linear-gradient(
+    180deg,
+    #24b13b,
+    rgba(31, 194, 126, 0.8) 75.35%,
+    rgba(39, 193, 106, 0.2) 95.14%
+  );
+  width: 25vh;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+  z-index: 1;
+  position: fixed;
+}
+
+.logo {
+  max-width: 98%;
+}
+
+.list-group {
+  width: 100%;
+}
+
+.list-group-item {
+  display: flex;
+  flex-direction: row;
+  border-color: rgb(196, 33, 33);
+}
+
+.list-group-item2 {
+  display: flex;
+  flex-direction: row;
+  margin-left: 1vw;
+}
+
+.list-item {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid;
+  border-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  list-style: none;
+  padding: 15px 0px;
+  width: 100%;
+}
+
+.list-item:hover {
+  cursor: pointer;
+  background-color: rgb(0, 255, 140);
+  width: 100%;
+}
+
+.formulario {
+  width: 80%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 5vmax;
+  font-weight: 500;
+  padding-top: 8vh;
+  font-style: italic;
+  background: -webkit-linear-gradient(90deg, #24b13b, rgb(0, 0, 0));
+  background-clip: content-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: wavy;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80vw;
+  margin-left: 40vh;
+}
+.PersonalInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 5vh;
+}
+
+#sectionTitle {
+  font-size: 2vmax;
+  font-style: italic;
+  text-decoration: underline;
+  background-image: linear-gradient(45deg, #24b13ba3, 15%, white);
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  margin-left: -15vh;
+  padding-left: 15vh;
+}
+
+.name-input {
+  width: 100%;
+  padding-top: 20px;
+  border-color: #24b13b;
+  border-radius: 4px;
+  height: 4vh;
+}
+
+.documentNacionality {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* align-items: center; */
+  padding-top: 2rem;
+}
+
+#document {
+  margin: 0px 0px 1rem 0px;
+  border-color: #24b13b;
+  border-radius: 4px;
+  height: 2rem;
+}
+
+.antecedentesMedicos {
+  padding-top: 4vh;
+}
+
+.antecedentes-titulo {
+  background-image: linear-gradient(45deg, #24b13ba3, 15%, 0%);
+  width: 80%;
+  display: flex;
+  justify-content: left;
+}
+
+#BirthDate {
+  max-width: fit-content;
+  width: 100%;
+  font-size: 1.2vmax;
+}
+
+.deploy-countries {
+  font-size: 1.5vmax;
+}
+
+.p-deploy {
+  font-size: large;
+}
+
+.patologias {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4vh;
+}
+
+.add-btn {
+  height: 2vh;
+  width: 3vh;
+}
+
+.tumores-text {
+  width: 30%;
+}
+
+.tumores-input input {
+  width: 40vw;
+}
+
+.lista-rango {
+  width: 30px;
+}
+
+.pregnant {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  font-size: 1.2vmax;
+  padding-top: 2rem;
+}
+
+.Co2 {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 4vh;
+  padding-top: 4vh;
+}
+
+.buttonsDiv {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  padding-top: 4vh;
+  padding-bottom: 4vh;
+}
+
+#button-guardar {
+  background: #24b13b;
+  color: #fff;
+}
+
+.nacionality {
+  height: 5vh;
+}
+
+input::placeholder {
+  color: #454545b1;
+}
+
+option {
+  border-style: dotted;
+  border: 2px solid;
+  border-color: #24b13b;
+}
+
+.operaciones-cardiacas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 500;
+  font-size: 1vmax;
+  padding-top: 20px;
+  border: 1px solid;
+  border-color: rgb(204, 204, 204);
+}
+
+.operaciones-respiratorias {
+  display: flex;
+  justify-content: space-around;
+  font-weight: 500;
+  font-size: 1vmax;
+  padding-top: 20px;
+  border: 1px solid;
+  border-color: rgb(204, 204, 204);
+}
+
+.alergias {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: 500;
+  font-size: 1vmax;
+  padding-top: 20px;
+  border: 1px solid;
+  border-color: rgb(204, 204, 204);
+}
+
+.tabla {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.form-group label {
+  font-weight: 500;
+  font-size: 1.5vmax;
+}
+
+.qr {
+  max-width: 10vw;
+}
+
+.qrs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.choose-color {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.select-color-title {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.qrs input[type="radio"] {
+  transform: scale(2);
+}
