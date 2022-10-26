@@ -7,9 +7,14 @@ export const Presentation = () => {
   return (
     <div>
       <div className="presentation">
+    <div className="rady">
+      <div
+        className="presentation"
+        style={{ filter: `blur(${isShowLogin ? 10 : 0}px)` }}
+      >
         <div className="svgBackground">
           <div className="gridWrapper">
-            <img src={qrimg} className="logo" alt="qrimg" />
+            <img src={qrimg} className="logo-qr" alt="qrimg" />
             <div className="presentationWrapper">
               <h1 className="presentationTitle">
                 The QR code that could save your life
